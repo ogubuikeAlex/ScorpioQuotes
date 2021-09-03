@@ -1,0 +1,33 @@
+﻿@model QuoteOfTheDay.Models.Quote
+@{
+   ViewData["Title"] = "Home Page";
+   Random rand = new Random();
+   var num = rand.Next(0, 29);
+   var quotes = QuoteOfTheDay.DataStore.getQuotes();    
+}
+
+    <section class="main">
+        <div class="parallax-Image">
+            <img class="image" src="/lib/30-Scorpio-Quotes-about-Being-a-Scorpio.jpg" alt="Scorpio picture" width =600 />
+        </div>
+        <div class="Text-section">
+            <h1 class="bg-dark text-white text-center m-2 p-2"> Being Scorpio</h1>
+            <p class="text-secondary">
+                Those born under the Scorpio sign are often known for their intensity and passion. Use these Scorpio quotes to get to know the Scorpios in your life a little better. And if you are scorpio enough, feel free to add yours!
+            </p>
+            <div text">
+                <p class="text-md-center author text-monospace">Author : @quotes[num].Author</p>
+                <hr />
+                <blockquote class="text-xl-center quotes text-monospace">" @quotes[num].Text "</blockquote>
+            </div>
+            <div class="text-center">
+                <a asp-action="AddQuoteForm" class="btn btn-outline-danger"> Add a new Quote </a>
+                <a asp-action="ViewQuotes" class="btn btn-outline-danger"> View all Quotes</a>
+            </div>
+           
+
+
+        </div>       
+    </section>    
+
+

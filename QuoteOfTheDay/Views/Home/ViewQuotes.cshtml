@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "ViewQuotes";
+    var list = DataStore.GetAll;
+}
+
+<div class="text-center p-2">
+    <h2> Quote Scorprary</h2>
+    <table class="table table-bordered table-striped table-sm">
+        <thead>
+            <tr>
+                <th>Author</th>
+                <th></th>
+                <th>Quote</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var quote in list)
+            {
+                <tr>
+                    <td>@quote.Author</td>
+                    <td></td>
+                    <td>@quote.Text</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>
+

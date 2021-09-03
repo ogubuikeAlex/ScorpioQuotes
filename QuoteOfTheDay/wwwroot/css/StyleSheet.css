@@ -1,0 +1,48 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+.main{
+    display: flex;
+    border: 2px solid white;    
+    width: 80%;
+   margin: 40px auto;
+   height: 70vh;
+   padding: 40px;
+   background-color: white;
+   border-radius: 5px;
+}
+.parallax-Image {   
+    width: 50%;
+   margin-right: 20px;   
+}
+.text {
+    border: 3px double black;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 10px;
+   
+  
+}
+.text-center{
+    background-color: white;
+}
+.text-secondary {
+    font-size: larger;
+}
+.form {
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 5px;
+    padding: 20px 10px;
+    background-color: white;
+}
+.sub{
+    margin-top: 10px;
+}
+.quotes, .thanktext {
+    font-size: x-large;
+}
