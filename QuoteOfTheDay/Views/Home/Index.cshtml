@@ -2,7 +2,7 @@
 @{
    ViewData["Title"] = "Home Page";
    Random rand = new Random();
-   var num = rand.Next(0, 29);
+   var num = rand.Next(0, DataStore.GetAll.Count());
    var quotes = QuoteOfTheDay.DataStore.getQuotes();    
 }
 
